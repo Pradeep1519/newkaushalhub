@@ -292,4 +292,7 @@ if (require.main === module) {
   });
 }
 
-module.exports = { createServer, STATIC_FILES: [...STATIC_FILES] };
+const vercelServer = createServer();
+vercelServer.createServer = createServer;
+vercelServer.STATIC_FILES = [...STATIC_FILES];
+module.exports = vercelServer;

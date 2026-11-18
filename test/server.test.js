@@ -1,5 +1,6 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
+const http = require('node:http');
 const os = require('node:os');
 const path = require('node:path');
 const { afterEach, beforeEach, describe, it } = require('node:test');
@@ -15,6 +16,12 @@ describe('Node.js website server', () => {
     server = createServer({ dataDir });
     await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
     baseUrl = `http://127.0.0.1:${server.address().port}`;
+  });
+
+  it('exports an HTTP server for Vercel', () => {
+    const app = require('../server');
+    assert.ok(app instanceof http.Server);
+    assert.equal(typeof app.createServer, 'function');
   });
 
   afterEach(async () => {
