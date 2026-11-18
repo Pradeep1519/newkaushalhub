@@ -177,7 +177,12 @@ function bindSubmission(formId, endpoint, payloadType, successMessage, onSuccess
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(fields)
       });
-      const result = await response.json();
+      let result;
+      try {
+        result = await response.json();
+      } catch {
+        throw new Error('The submission service is unavailable. Please contact us directly.');
+      }
       if (!response.ok) {
         throw new Error(result.error || 'Submission failed. Please try again.');
       }

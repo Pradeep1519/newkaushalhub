@@ -292,4 +292,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { createServer };
+module.exports = { createServer, STATIC_FILES: [...STATIC_FILES] };

@@ -27,6 +27,12 @@ npm start
 
 Open http://localhost:3000. Use `PORT` to change the port and `HOST` to change the bind address.
 
+## Deploy to Vercel
+
+The Vercel build copies only the website pages and assets into `dist/`, which is deployed as a static site. Vercel project settings should use the repository root as the Root Directory; `vercel.json` configures the build command and output directory.
+
+The Node.js form API is available when running with `npm start`, but is not deployed by this static Vercel configuration. Configure a persistent database and Vercel Functions before using online form submissions in production.
+
 ## Server features
 
 - Serves the existing site pages and static assets.
