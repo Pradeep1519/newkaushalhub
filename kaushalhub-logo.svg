@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">KaushalHub logo</title>
+  <defs>
+    <linearGradient id="hub" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F4C81"/>
+      <stop offset="1" stop-color="#1CA7A0"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="18" fill="url(#hub)"/>
+  <path d="M19 18v28m0-14 17-14M27 32l11 14" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <circle cx="45" cy="19" r="3" fill="#BFF8E8"/>
+</svg>

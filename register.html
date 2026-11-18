@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration | KaushalHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <span>Student registration and workshop enquiries</span>
+        <a href="tel:+918700522408">+91 8700522408</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="KaushalHub home">
+          <img class="brand-logo" src="kaushalhub-logo.svg" alt="" />
+          <span class="brand-copy"><strong>KaushalHub</strong><small>NAUKRIPATH</small></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#workshops">AI Workshops</a>
+          <a href="register.html">For Students</a>
+          <a href="institutions.html">For Institutions</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="events.html">Upcoming Events</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="primary-actions">
+          <a class="btn btn-primary" href="index.html#workshops">View Catalogue</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <div class="container page-banner-content">
+        <span class="eyebrow" style="background: rgba(255,255,255,0.1); color:#fff; border-color: rgba(255,255,255,0.2);">Student registration</span>
+        <h1>Reserve your seat for the next AI workshop.</h1>
+        <p>Submit your details to register your interest. Our team will confirm the workshop and payment details with you.</p>
+      </div>
+    </section>
+
+    <main class="page-main">
+      <div class="container split-grid">
+        <aside class="info-panel">
+          <h2>Workshop details</h2>
+          <div class="mini-card" style="margin-bottom:1rem;">
+            <strong>AI, Generative AI & Agentic AI</strong>
+            <p>3-day intensive workshop designed for practical AI learning and real-world prototyping.</p>
+          </div>
+          <ul class="list-check">
+            <li>Course designed for students, early learners and career-focused professionals.</li>
+            <li>Expert-led sessions with demonstrations, tool-based learning and real use cases.</li>
+            <li>Receive a unique registration ID. Payment remains pending until payment processing is configured.</li>
+          </ul>
+          <div class="stat-box" style="margin-top:1.2rem;">
+            <strong>₹1,199</strong>
+            <span>Fixed workshop fee</span>
+          </div>
+        </aside>
+
+        <div class="form-shell">
+          <form id="student-registration-form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="full-name">Full name</label>
+                <input id="full-name" name="fullName" type="text" required />
+              </div>
+              <div class="field">
+                <label for="mobile">Mobile number</label>
+                <input id="mobile" name="mobile" type="tel" required />
+              </div>
+              <div class="field">
+                <label for="whatsapp">WhatsApp number</label>
+                <input id="whatsapp" name="whatsapp" type="tel" required />
+              </div>
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="college">College / university</label>
+                <input id="college" name="college" type="text" required />
+              </div>
+              <div class="field">
+                <label for="course">Course / stream</label>
+                <input id="course" name="course" type="text" required />
+              </div>
+              <div class="field">
+                <label for="year">Year of study</label>
+                <select id="year" name="year" required>
+                  <option value="">Select</option>
+                  <option>1st Year</option>
+                  <option>2nd Year</option>
+                  <option>3rd Year</option>
+                  <option>4th Year</option>
+                  <option>Postgraduate</option>
+                  <option>Working Professional</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="city-state">City and state</label>
+                <input id="city-state" name="cityState" type="text" required />
+              </div>
+              <div class="field full">
+                <label for="workshop">Selected workshop</label>
+                <select id="workshop" name="workshop" required>
+                  <option value="">Select a workshop</option>
+                  <option>AI Awareness & Future of AI</option>
+                  <option>AI for Entrepreneurship – From Idea to First Customer</option>
+                  <option>Generative AI & Productivity</option>
+                  <option>AI, Generative AI & Agentic AI</option>
+                  <option>AI for Careers & Industry Readiness</option>
+                  <option>AI Industry Readiness Programme</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="consent">Messaging consent</label>
+                <select id="consent" name="consent">
+                  <option value="yes">I agree to receive registration and WhatsApp updates</option>
+                  <option value="no">I do not want WhatsApp updates</option>
+                </select>
+              </div>
+            </div>
+            <div class="stat-box" style="margin:1rem 0;">
+              <strong id="payment-status">Payment is not collected on this website</strong>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:0.6rem;">Submit registration</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> KaushalHub NaukriPath Private Limited</span>
+        <span>Secure forms • Payment verification</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "kaushalhub-naukripath",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KaushalHub NaukriPath website and Node.js submission server",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

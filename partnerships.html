@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partnerships & Sponsorship | KaushalHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <span>Partnership and sponsorship opportunities for impact-driven organizations</span>
+        <a href="tel:+918700522408">+91 8700522408</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="KaushalHub home">
+          <img class="brand-logo" src="kaushalhub-logo.svg" alt="" />
+          <span class="brand-copy"><strong>KaushalHub</strong><small>NAUKRIPATH</small></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#workshops">AI Workshops</a>
+          <a href="register.html">For Students</a>
+          <a href="institutions.html">For Institutions</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="events.html">Upcoming Events</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="primary-actions">
+          <a class="btn btn-primary" href="contact.html">Discuss opportunities</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <div class="container page-banner-content">
+        <span class="eyebrow" style="background: rgba(255,255,255,0.1); color:#fff; border-color: rgba(255,255,255,0.2);">Partnerships & sponsorship</span>
+        <h1>Partner With Us to Build India's AI-Ready Workforce.</h1>
+        <p>Collaborate with KaushalHub NaukriPath to bring practical AI education, industry exposure and technology-led learning opportunities to students across India.</p>
+      </div>
+    </section>
+
+    <main class="page-main">
+      <div class="container">
+        <div class="value-grid" style="margin-bottom:2rem;">
+          <div class="value-card">
+            <h3>College & University Partnerships</h3>
+            <p>Campus workshops, technical seminars, entrepreneurship initiatives and faculty interactions.</p>
+          </div>
+          <div class="value-card">
+            <h3>Corporate Sponsorship</h3>
+            <p>Event sponsorship, scholarship support, brand visibility and campus engagement opportunities.</p>
+          </div>
+          <div class="value-card">
+            <h3>CSR Partnerships</h3>
+            <p>Supported student training, AI awareness and skill-development initiatives with legal compliance.</p>
+          </div>
+          <div class="value-card">
+            <h3>Industry & Technology Partnerships</h3>
+            <p>Expert sessions, mentorship, internship opportunities and technology demonstrations.</p>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <div class="info-panel">
+            <h2>How partnerships work</h2>
+            <ul class="list-check">
+              <li>Open discussion to align goals, audience and engagement model.</li>
+              <li>Customized proposal based on outcomes, location and programme design.</li>
+              <li>Mutual agreement on commercial terms, outreach and execution plan.</li>
+              <li>Ongoing campaigns with impact reporting and visibility support.</li>
+            </ul>
+          </div>
+
+          <div class="form-shell">
+            <h2 style="margin-top:0;">Request partnership proposal</h2>
+            <form id="partnership-form">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="org-name">Organization name</label>
+                  <input id="org-name" name="organizationName" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="contact-person">Contact person</label>
+                  <input id="contact-person" name="contactPerson" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="designation">Designation</label>
+                  <input id="designation" name="designation" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="corporate-email">Corporate email</label>
+                  <input id="corporate-email" name="email" type="email" required />
+                </div>
+                <div class="field">
+                  <label for="partnership-mobile">Mobile number</label>
+                  <input id="partnership-mobile" name="mobile" type="tel" required />
+                </div>
+                <div class="field">
+                  <label for="partnership-category">Partnership category</label>
+                  <select id="partnership-category" name="category" required>
+                    <option value="">Select</option>
+                    <option>College & University Partnerships</option>
+                    <option>Corporate Sponsorship</option>
+                    <option>CSR Partnerships</option>
+                    <option>Industry & Technology Partnerships</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="sponsorship-amount">Proposed sponsorship amount</label>
+                  <input id="sponsorship-amount" name="amount" type="text" />
+                </div>
+                <div class="field">
+                  <label for="preferred-location">Preferred location</label>
+                  <input id="preferred-location" name="location" type="text" required />
+                </div>
+                <div class="field full">
+                  <label for="expected-outcomes">Expected outcomes</label>
+                  <textarea id="expected-outcomes" name="outcomes"></textarea>
+                </div>
+                <div class="field full">
+                  <label for="additional-requirements">Additional requirements</label>
+                  <textarea id="additional-requirements" name="requirements"></textarea>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit" style="width:100%; margin-top:1rem;">Request Partnership Proposal</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> KaushalHub NaukriPath Private Limited</span>
+        <span>Customized collaboration models</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>

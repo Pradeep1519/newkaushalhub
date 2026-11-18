@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming Events | KaushalHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <span>Event calendar • Confirmed listings only</span>
+        <a href="tel:+918700522408">+91 8700522408</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="KaushalHub home">
+          <img class="brand-logo" src="kaushalhub-logo.svg" alt="" />
+          <span class="brand-copy"><strong>KaushalHub</strong><small>NAUKRIPATH</small></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#workshops">AI Workshops</a>
+          <a href="register.html">For Students</a>
+          <a href="institutions.html">For Institutions</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="events.html">Upcoming Events</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="primary-actions">
+          <a class="btn btn-primary" href="institutions.html">Host an Event</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <div class="container page-banner-content">
+        <span class="eyebrow" style="background: rgba(255,255,255,0.1); color:#fff; border-color: rgba(255,255,255,0.2);">Event calendar</span>
+        <h1>Upcoming events and campus engagements.</h1>
+        <p>Only confirmed dates and authorized information are presented publicly. Proposed institutional engagements remain under discussion until approved.</p>
+      </div>
+    </section>
+
+    <main class="page-main">
+      <div class="container">
+        <div class="event-grid" id="event-grid"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> KaushalHub NaukriPath Private Limited</span>
+        <span>Verified dates and event status updates</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | KaushalHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <span>Contact KaushalHub for student, institutional and partnership enquiries</span>
+        <a href="tel:+918700522408">+91 8700522408</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="KaushalHub home">
+          <img class="brand-logo" src="kaushalhub-logo.svg" alt="" />
+          <span class="brand-copy"><strong>KaushalHub</strong><small>NAUKRIPATH</small></span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#workshops">AI Workshops</a>
+          <a href="register.html">For Students</a>
+          <a href="institutions.html">For Institutions</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="events.html">Upcoming Events</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="primary-actions">
+          <a class="btn btn-primary" href="register.html">Register now</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <div class="container page-banner-content">
+        <span class="eyebrow" style="background: rgba(255,255,255,0.1); color:#fff; border-color: rgba(255,255,255,0.2);">Contact us</span>
+        <h1>We’re here to help.</h1>
+        <p>Reach out for workshop registrations, institutional programmes, sponsorships and strategic collaborations.</p>
+      </div>
+    </section>
+
+    <main class="page-main">
+      <div class="container contact-grid" style="margin-bottom:2rem;">
+        <article class="contact-card">
+          <div class="icon">🎓</div>
+          <h3>Student enquiries</h3>
+          <p>For workshop registration, fee information and programme details.</p>
+          <a class="link-arrow" href="register.html">Register here →</a>
+        </article>
+        <article class="contact-card">
+          <div class="icon">🏫</div>
+          <h3>Institutional enquiries</h3>
+          <p>For campus workshops, faculty training and customized programmes.</p>
+          <a class="link-arrow" href="institutions.html">Request proposal →</a>
+        </article>
+        <article class="contact-card">
+          <div class="icon">🤝</div>
+          <h3>Sponsorship enquiries</h3>
+          <p>For CSR, corporate and industry-led collaboration opportunities.</p>
+          <a class="link-arrow" href="partnerships.html">Explore partnership →</a>
+        </article>
+      </div>
+
+      <div class="container split-grid">
+        <div class="info-panel">
+          <h2>Company details</h2>
+          <p><strong>KaushalHub NaukriPath Private Limited</strong></p>
+          <p>Address: B-7, Noida Sector 2, Noida, Uttar Pradesh – 201301</p>
+          <p>Phone / WhatsApp: +91 8700522408</p>
+          <p>Email: info@kaushalhub.com</p>
+        </div>
+
+        <div class="form-shell">
+          <h2 style="margin-top:0;">Send an enquiry</h2>
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="contact-phone">Phone number</label>
+                <input id="contact-phone" name="phone" type="tel" required />
+              </div>
+              <div class="field">
+                <label for="topic">Enquiry type</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Select</option>
+                  <option>Student enquiry</option>
+                  <option>Institutional enquiry</option>
+                  <option>Sponsorship enquiry</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="enquiry-message">Message</label>
+                <textarea id="enquiry-message" name="message" required></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:1rem;">Send enquiry</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> KaushalHub NaukriPath Private Limited</span>
+        <span>info@kaushalhub.com</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
