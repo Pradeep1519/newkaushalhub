@@ -29,7 +29,7 @@ Open http://localhost:3000. Use `PORT` to change the port and `HOST` to change t
 
 ## Deploy to Vercel
 
-The Vercel build copies only the website pages and assets into `dist/`, which is deployed as a static site. Vercel project settings should use the repository root as the Root Directory; `vercel.json` configures the build command and output directory. The local Node server is named `app-server.js` so Vercel does not mistake it for a server entry point.
+The Vercel build copies only the website pages and assets into `dist/`, which is deployed as a static site. The `framework: null` setting selects Vercel's "Other" preset and prevents it from looking for a Node server entry point. Vercel project settings should use the repository root as the Root Directory; `vercel.json` configures the build command and output directory. The local Node server is named `app-server.js` so Vercel does not mistake it for a server entry point.
 
 The Node.js form API is available when running with `npm start`, but is not deployed by this static Vercel configuration. Configure a persistent database and Vercel Functions before using online form submissions in production.
 
