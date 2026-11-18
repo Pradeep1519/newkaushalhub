@@ -3,7 +3,7 @@ const fs = require('node:fs/promises');
 const http = require('node:http');
 const path = require('node:path');
 
-const ROOT = __dirname;
+const ROOT = path.resolve(__dirname);
 const DEFAULT_DATA_DIR = path.join(ROOT, 'data');
 const MAX_BODY_BYTES = 16 * 1024;
 const STATIC_FILES = new Set([

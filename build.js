@@ -1,6 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
-const { STATIC_FILES } = require('./server');
+const { STATIC_FILES } = require('./app-server');
 
 async function build() {
   const outputDirectory = path.join(__dirname, 'dist');

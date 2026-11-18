@@ -4,7 +4,7 @@ const http = require('node:http');
 const os = require('node:os');
 const path = require('node:path');
 const { afterEach, beforeEach, describe, it } = require('node:test');
-const { createServer } = require('../server');
+const { createServer } = require('../app-server');
 
 describe('Node.js website server', () => {
   let dataDir;
@@ -19,7 +19,7 @@ describe('Node.js website server', () => {
   });
 
   it('exports an HTTP server for Vercel', () => {
-    const app = require('../server');
+    const app = require('../app-server');
     assert.ok(app instanceof http.Server);
     assert.equal(typeof app.createServer, 'function');
   });
@@ -140,7 +140,7 @@ describe('Node.js website server', () => {
     await fs.mkdir(dataDir, { recursive: true });
     await fs.writeFile(path.join(dataDir, 'submissions.json'), '[]');
     const [source, submissions] = await Promise.all([
-      fetch(`${baseUrl}/server.js`),
+      fetch(`${baseUrl}/app-server.js`),
       fetch(`${baseUrl}/data/submissions.json`)
     ]);
 
